@@ -3,4 +3,30 @@
   white-space: nowrap;
   margin: 0 -22px -22px;
   padding: 22px;
+  scrollbar-width: none;
+}
+
+.buttonRow::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .buttonRow {
+    scrollbar-width: auto;
+  }
+
+  .buttonRow::-webkit-scrollbar {
+    display: block;
+  }
+
+  .buttonRow::-webkit-scrollbar-track {
+    border: 2px solid hsl(180deg, 25%, 92%);
+    border-radius: 100vw;
+    background-color: white;
+  }
+
+  .buttonRow::-webkit-scrollbar-thumb {
+    border-radius: 100vw;
+    background-color: hsl(195deg, 20%, 86%);
+  }
 }

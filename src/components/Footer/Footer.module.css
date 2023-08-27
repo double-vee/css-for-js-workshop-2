@@ -1,11 +1,18 @@
 .footer {
   position: relative;
-  padding: 64px;
+  padding: 32px;
   background: hsl(0deg, 0%, 5%);
   color: white;
   text-align: center;
+  z-index: 1;
 }
 
 .footer a {
   color: inherit;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 64px;
+  }
 }
